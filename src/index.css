@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Samsung';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/samsungsharpsans.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/samsungsharpsans-medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('./fonts/samsungsharpsans-bold.woff') format('woff');
+}
+
+.container{
+    @apply px-5 sm:px-7 md:px-9 mx-auto 2xl:max-w-[1536px] ;
+}
+
+.bg{
+    background: linear-gradient(105.56deg, #222233 -0.16%, #1C1C28 36.36%, #1C1C28 100%);
+    width: 100%;
+}
+
+.top{
+    width: 100%;
+    margin: 0 auto;
+    @apply h-screen sm:h-auto;
+    background: url("../public/img/candle.svg") center/cover no-repeat;
+}
+
+.fast{
+    background: linear-gradient(180deg, #FE7A99 0%, #E92E5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trade-btn{
+    background-color: rgba(233, 46, 91, 0.3);
+    border: solid 1px #E92E5B;
+}
+
+.mobile-menu{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.r{
+    place-items: center;
+}
+
+.why{
+    background: url("../public/img/vivo-bg.png") center/cover no-repeat;
+    min-height: 70px;
+}
+
+.card{
+    @apply px-4 py-6 mt-5 min-h-[200px] xl:px-7 xl:py-7 cursor-pointer;
+}
+
+.ayr{
+    background: url("../public/img/are-you-ready.svg") center/cover no-repeat;
+}
