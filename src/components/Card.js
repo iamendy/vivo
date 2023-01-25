@@ -8,7 +8,7 @@ const Card = ({title, text, img}) => {
         <img src={img} alt={title} className="w-9 h-9"/>
         <h3 className="font-medium ml-3"> {title} </h3>
       </div>
-      <p className="text-xs leading-[25px]">
+      <p className="text-xs leading-[25px] 2xl:text-sm leading-loose">
         {text}
       </p>
     </div>
